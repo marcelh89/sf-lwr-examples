@@ -4,25 +4,27 @@
     {
       "id": "home",
       "path": "/",
-      "rootComponent": "home/app"
+      "rootComponent": "home/app",
+      "layoutTemplate": "$layoutsDir/main.html"
     },
     {
       "id": "main",
       "path": "/main",
-      "rootComponent": "main/app"
+      "rootComponent": "main/app",
+      "layoutTemplate": "$layoutsDir/main.html"
     },
     {
       "id": "about",
       "path": "/about",
-      "rootComponent": "about/app"
+      "rootComponent": "about/app",
+      "layoutTemplate": "$layoutsDir/main.html"
     }
   ],
   "errorRoutes": [
     {
       "id": "not_found",
       "status": 404,
-      "rootComponent": "global/error",
-      "properties": { "p_status": 404 }
+      "rootComponent": "global/error"
     },
     {
       "id": "server_error",
