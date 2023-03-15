@@ -1,0 +1,33 @@
+{
+  "lwc": { "modules": [{ "dir": "$rootDir/src/modules" }] },
+  "routes": [
+    {
+      "id": "home",
+      "path": "/",
+      "rootComponent": "home/app"
+    },
+    {
+      "id": "main",
+      "path": "/main",
+      "rootComponent": "main/app"
+    },
+    {
+      "id": "about",
+      "path": "/about",
+      "rootComponent": "about/app"
+    }
+  ],
+  "errorRoutes": [
+    {
+      "id": "not_found",
+      "status": 404,
+      "rootComponent": "global/error",
+      "properties": { "p_status": 404 }
+    },
+    {
+      "id": "server_error",
+      "status": 500,
+      "contentTemplate": "$contentDir/server-error.html"
+    }
+  ]
+}

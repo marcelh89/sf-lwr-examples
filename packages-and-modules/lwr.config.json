@@ -1,0 +1,20 @@
+{
+  "lwc": {
+    "modules": [
+      {
+        "name": "ui/button",
+        "path": "src/modules/ui/button/button.js"
+      },
+      { "dir": "$rootDir/src/modules" },
+      { "npm": "lightning-base-components" }
+    ]
+  },
+  "routes": [
+    {
+      "id": "example",
+      "path": "/",
+      "rootComponent": "example/app"
+    }
+  ]
+  
+}
