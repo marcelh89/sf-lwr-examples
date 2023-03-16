@@ -1,0 +1,13 @@
+<template>
+  <lightning-card title="Todo List">
+    <template for:each={todoItems} for:item="todoItem">
+      <c-todo-item
+        key={todoItem.id}
+        todo-item={todoItem}
+        ondeletetodoitem={handleDeleteTodoItem}
+      >
+      </c-todo-item>
+    </template>
+    <c-add-todo-item onaddtodoitem={handleAddTodoItem}></c-add-todo-item>
+  </lightning-card>
+</template>
