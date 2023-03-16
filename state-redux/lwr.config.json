@@ -1,0 +1,15 @@
+{
+  "lwc": {
+    "modules": [
+      { "dir": "$rootDir/src/modules" },
+      { "npm": "lightning-base-components" }
+    ]
+  },
+  "routes": [
+    {
+      "id": "app",
+      "path": "/",
+      "rootComponent": "c/app"
+    }
+  ]
+}
