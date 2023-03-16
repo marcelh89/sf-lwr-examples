@@ -1,15 +1,17 @@
 import { LightningElement, track } from "lwc";
 
 export default class AddTodoItem extends LightningElement {
-  @track todoItem = { name: "" };
+  @track name = "";
 
   handleChange(event) {
-    this.todoItem.name = event.target.value;
+    this.name = event.target.value;
   }
 
   handleAddTodoItem() {
-    const addEvent = new CustomEvent("addtodoitem", { detail: this.todoItem });
-    this.dispatchEvent(addEvent);
-    this.todoItem = { name: "" };
+    if (this.name !== "") {
+      const addEvent = new CustomEvent("addtodoitem", { detail: this.name });
+      this.dispatchEvent(addEvent);
+      this.name = "";
+    }
   }
 }

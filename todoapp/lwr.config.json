@@ -9,7 +9,7 @@
     {
       "id": "c",
       "path": "/",
-      "rootComponent": "c/app"
+      "rootComponent": "c/todoList"
     }
   ]
 }
