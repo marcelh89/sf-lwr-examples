@@ -1,18 +1,14 @@
-import { LightningElement, api } from "lwc";
-import { configureStore } from "@reduxjs/toolkit";
-
-import { counterReducer } from "./reducers";
+import { LightningElement, track } from "lwc";
+import store from "./store";
+import { increment, decrement } from "./store";
 
 export default class Counter extends LightningElement {
-  @api store;
-  count = 0;
-  unsubscribe;
+  @track count = 0;
 
   connectedCallback() {
-    this.store = configureStore({ reducer: counterReducer });
-    this.unsubscribe = this.store.subscribe(() => {
-      const state = this.store.getState();
-      this.count = state.count;
+    this.unsubscribe = store.subscribe(() => {
+      const state = store.getState();
+      this.count = state.counter.value;
     });
   }
 
@@ -20,11 +16,11 @@ export default class Counter extends LightningElement {
     this.unsubscribe();
   }
 
-  handleIncrement() {
-    this.store.dispatch({ type: "INCREMENT" });
+  handleIncrementClick() {
+    store.dispatch(increment());
   }
 
-  handleDecrement() {
-    this.store.dispatch({ type: "DECREMENT" });
+  handleDecrementClick() {
+    store.dispatch(decrement());
   }
 }

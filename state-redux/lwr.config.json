@@ -7,9 +7,9 @@
   },
   "routes": [
     {
-      "id": "app",
+      "id": "counter",
       "path": "/",
-      "rootComponent": "c/app"
+      "rootComponent": "c/counter"
     }
   ]
 }
