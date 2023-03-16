@@ -2,6 +2,10 @@
   "lwc": {
     "modules": [
       { "dir": "$rootDir/src/modules" },
+      {
+        "name": "store",
+        "path": "src/store.js"
+      },
       { "npm": "lightning-base-components" }
     ]
   },
