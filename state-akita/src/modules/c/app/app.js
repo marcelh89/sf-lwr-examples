@@ -1,6 +1,6 @@
 import { LightningElement, track } from "lwc";
 import todoStore from "store";
-import { setProp, select } from "@ngneat/elf";
+import { setProp } from "@ngneat/elf";
 
 export default class TodoListComponent extends LightningElement {
   newTodo = "";
@@ -13,10 +13,10 @@ export default class TodoListComponent extends LightningElement {
     // });
   }
 
-  // or you can directly use the global state (only works for component that also write to state)
+  // or you can directly use the global state
   get todos() {
-    const {todos} = todoStore.getValue()
-    //const todos = todoStore.pipe(select((state) => state.user));
+    // const {todos} = todoStore.getValue()
+    const todos = todoStore.pipe(select((state) => state.user));
     return todos || [];
   }
 

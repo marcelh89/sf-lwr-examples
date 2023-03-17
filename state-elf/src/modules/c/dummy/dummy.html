@@ -1,0 +1,11 @@
+<template>
+    <div>
+      <h1>Todos (Readonly)</h1>
+      <ul>
+        <template for:each={todos} for:item="todo">
+          <li key={todo.id}>{todo.title}</li>
+        </template>
+      </ul>
+    </div>
+  </template>
+  
