@@ -15,6 +15,8 @@ Salesforce Lightning Web Runtime / Lightning Web Component Examples
   - https://ngneat.github.io/elf/docs/store/
 - state-pubsub
   - custom simple state implementation based on pub-sub pattern
+- state-mobx
+  - counter example using mobx state management https://github.com/mobxjs/mobx
 
 
 Not working

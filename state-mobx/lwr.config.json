@@ -1,0 +1,18 @@
+{
+  "lwc": {
+    "modules": [
+      { "dir": "$rootDir/src/modules" },
+      {
+        "name": "store",
+        "path": "src/store.js"
+      }
+    ]
+  },
+  "routes": [
+    {
+      "id": "example",
+      "path": "/",
+      "rootComponent": "example/app"
+    }
+  ]
+}
