@@ -13,7 +13,8 @@ Salesforce Lightning Web Runtime / Lightning Web Component Examples
   - https://redux.js.org/
 - state-elf - state management with Elf 
   - https://ngneat.github.io/elf/docs/store/
-
+- state-pubsub
+  - custom simple state implementation based on pub-sub pattern
 
 
 Not working
