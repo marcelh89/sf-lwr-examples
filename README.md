@@ -17,7 +17,8 @@ Salesforce Lightning Web Runtime / Lightning Web Component Examples
   - custom simple state implementation based on pub-sub pattern
 - state-mobx
   - counter example using mobx state management https://github.com/mobxjs/mobx
-
+- todoapp
+  - using Custom Events for Child-Parent communication  
 
 Not working
 - jotai state management (or only partly working with vanilla js support)
