@@ -1,5 +1,5 @@
 {
-  "name": "base-lwc-and-design-system",
+  "name": "state-custom",
   "version": "0.0.1",
   "license": "MIT",
   "private": true,
@@ -9,14 +9,7 @@
     "dev": "lwr serve",
     "start": "lwr serve --mode prod",
     "start:compat": "lwr serve --mode compat",
-    "start:prod-compat": "lwr serve --mode prod-compat",
-    "build": "node ./scripts/copy-slds.mjs"
-  },
-  "devDependencies": {
-    "@salesforce-ux/design-system": "^2.17.5",
-    "lightning-base-components": "^1.14.6-alpha",
-    "cpx": "^1.5.0"
-
+    "start:prod-compat": "lwr serve --mode prod-compat"
   },
   "dependencies": {
     "lwc": "2.17.0",

@@ -2,21 +2,21 @@
   <div>
     <h1>Todos</h1>
     <ul>
-      <template for:each={todos} for:item="todo">
-        <li key={todo.id}>{todo.title}</li>
+      <template for:each="{todos}" for:item="todo">
+        <li key="{todo.id}">{todo.title}</li>
       </template>
     </ul>
     <input
       type="text"
       placeholder="Add new todo"
-      value={newTodo}
-      oninput={updateNewTodo}
+      value="{newTodo}"
+      oninput="{updateNewTodo}"
     />
-    <button onclick={addTodo}>Add</button>
+    <button onclick="{addTodo}">Add</button>
 
     <hr />
 
     <c-dummy></c-dummy>
-
+    <c-dummy></c-dummy>
   </div>
 </template>
