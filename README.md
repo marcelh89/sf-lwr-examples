@@ -23,23 +23,24 @@ or use yarn instead
 
 ### Examples:
 - static-site-templates 
-  - pure scaffold of `npm init lwr` with type "Static Site"
+      - pure scaffold of `npm init lwr` with type "Static Site"
 - spa-static-server-side-routing
-  - scaffold of `npm init lwr` spa type "Single Page App"
-  - applied SSR based on https://developer.salesforce.com/docs/platform/lwr/guide/lwr-routing-server.html 
+      - scaffold of `npm init lwr` spa type "Single Page App"
+      - applied SSR based on https://developer.salesforce.com/docs/platform/lwr/guide/lwr-routing-server.html 
+  
 - base-lwc-and-design-system
-  - using salesforce desgin system https://developer.salesforce.com/docs/platform/lwr/guide/lwr-slds.html
-  - using Base Lightning Web Components https://developer.salesforce.com/docs/platform/lwr/guide/lwr-lwc.html
+      - using salesforce desgin system https://developer.salesforce.com/docs/platform/lwr/guide/lwr-slds.html
+      - using Base Lightning Web Components https://developer.salesforce.com/docs/platform/lwr/guide/lwr-lwc.html
 - state-redux - state management with Redux
-  - https://redux.js.org/
+      - https://redux.js.org/
 - state-elf - state management with Elf 
-  - https://ngneat.github.io/elf/docs/store/
+      - https://ngneat.github.io/elf/docs/store/
 - state-pubsub
-  - custom simple state implementation based on pub-sub pattern
+      - custom simple state implementation based on pub-sub pattern
 - state-mobx
-  - counter example using mobx state management https://github.com/mobxjs/mobx
+      - counter example using mobx state management https://github.com/mobxjs/mobx
 - todoapp
-  - using Custom Events for Child-Parent communication  
+      - using Custom Events for Child-Parent communication  
 
 Not working
 - jotai state management (or only partly working with vanilla js support)
