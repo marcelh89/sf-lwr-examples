@@ -1,6 +1,19 @@
 # sf-lwr-examples
 Salesforce Lightning Web Runtime / Lightning Web Component Examples
 
+### How to run
+cd into subdirectory e.g. base-lwc-and-design-system
+`cd base-lwc-and-design-system`
+`npm install`
+`npm run dev`
+
+or use yarn instead
+
+`cd base-lwc-and-design-system`
+`yarn`
+`yarn dev`
+
+### Examples:
 - static-site-templates 
   - pure scaffold of `npm init lwr` with type "Static Site"
 - spa-static-server-side-routing
