@@ -1,16 +1,24 @@
 # sf-lwr-examples
 Salesforce Lightning Web Runtime / Lightning Web Component Examples
 
-### How to run
-cd into subdirectory e.g. base-lwc-and-design-system
+This is a collection of examples of using Lightning Web Runtime based on LWR documentation [here](https://developer.salesforce.com/docs/platform/lwr/guide/lwr-get-started.html)
+
+
+### How to run (details see subdirectory README)
+cd into subdirectory e.g.
+
 `cd base-lwc-and-design-system`
+
 `npm install`
+
 `npm run dev`
 
 or use yarn instead
 
 `cd base-lwc-and-design-system`
+
 `yarn`
+
 `yarn dev`
 
 ### Examples:
